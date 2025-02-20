@@ -13,6 +13,7 @@
             padding: 0;
             box-sizing: border-box;
             font-family: "Raleway";
+            box-sizing: border-box;
         }
         body {
             
@@ -25,20 +26,36 @@
         .card {
             background: white;
             width: 320px;
-            border-radius: 15px;
+            border-radius: 25px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             text-align: center;
-            padding: 20px;
+            padding: 0px;
         }
-        .profile-img {
+        .perfil {
+            width: 320px;
+            height: 241px;
+            text-align: center;
+            border-radius: 10% 10% 70% 70%;
+            background-color: #16c7c2;
+            text-align: center;
+            border-bottom: 5px solid #16c7c2; /* Borde inferior */
+        }
+        .perfil img {
+    width: 100%; /* Ocupa todo el ancho del div */
+    height: 100%; /* Ocupa todo el alto del div */
+    object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+    border-radius: inherit; /* Hereda el border-radius del contenedor */
+}
+        /*.profile-img {
             width: 320px;
             height: 241px;
             align-items: center;
             justify-content: center;
             margin-left: -20px;
             margin-top: -20px;
+            padding: 0px;
             
-        }
+        }*/
         h2 {
             margin-top: 10px;
             font-size: 18px;
@@ -56,11 +73,11 @@
             align-items: center;
             justify-content: center;
             gap: 8px;
-            width: 100%;
+            width: 90%; /* Ancho del 90% del contenedor */
             background: #16c7c2;
             color: white;
             padding: 8px;
-            margin: 10px 0;
+            margin: 10px auto; /* Centrado horizontal */
             border-radius: 25px;
             text-decoration: none;
             font-size: 14px;
@@ -71,11 +88,11 @@
             align-items: center;
             justify-content: center;
             gap: 8px;
-            width: 100%;
+            width: 90%;
             background: #0f7f7b;
             color: white;
             padding: 8px;
-            margin: 10px 0;
+            margin: 10px auto; /* Centrado horizontal */
             border-radius: 25px;
             text-decoration: none;
             font-size: 14px;
@@ -92,6 +109,7 @@
             justify-content: center;
             gap: 35px;
             margin-top: 15px;
+            margin-bottom: 20px;
         }
         .social-icons img {
             width: 38px;
@@ -135,7 +153,10 @@
 </head>
 <body>
     <div class="card">
-        <img src="profile.png" alt="Foto de perfil" class="profile-img">
+        <!--<img src="profile.png" alt="Foto de perfil" class="profile-img">-->
+        <div class="perfil">
+            <img src="profile.png" alt="Imagen de perfil">
+        </div>
         <div class="title">
             <h2>Dra. Jazmín Hernández</h2> 
             <h3>Médico cirujano</h3>
@@ -147,7 +168,7 @@
         <div class="social-icons">
             <a href="#" class="instagram"><img src="ig.png" alt="Instagram"></a>
             <a href="#" class="facebook"><img src="fb.png" alt="Facebook"></a>
-            <a href="#" class="web"><img src="web.png" alt="Sitio Web"></a>
+            <a href="#" class="web"><img src="linkedin.png" alt="Sitio Web"></a>
         </div>
     </div>
 </body>
